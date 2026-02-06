@@ -1,80 +1,46 @@
-/* Reset ringan */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Radityo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* Body */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #f4f6f8, #e9ecf1);
-  color: #333;
-  line-height: 1.6;
-}
+  <div class="container">
+    <h1>Radityo Lintang Sasongko</h1>
+    <p class="subtitle">TKJ Student • Backend Enthusiast</p>
 
-/* Container utama */
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px 20px;
-}
+    <section>
+      <h2>About Me</h2>
+      <p><strong>Nama:</strong> Radityo Lintang Sasongko</p>
+      <p><strong>Umur:</strong> 16</p>
+      <p><strong>Sekolah:</strong> SMK Islam 1 Blitar</p>
+    </section>
 
-/* Judul */
-h1 {
-  font-size: 32px;
-  margin-bottom: 5px;
-}
+    <section>
+      <h2>Pengalaman</h2>
+      <div class="cards">
 
-.subtitle {
-  color: #666;
-  margin-bottom: 40px;
-}
+        <div class="card">
+          <img src="ippnu.png" alt="IPPNU">
+          <p>Berorganisasi di IPPNU</p>
+        </div>
 
-/* Section */
-section {
-  margin-bottom: 50px;
-}
+        <div class="card">
+          <img src="pramuka.png" alt="Pramuka">
+          <p>Berorganisasi di Pramuka</p>
+        </div>
 
-section h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
-  border-left: 5px solid #4f46e5;
-  padding-left: 10px;
-}
+        <div class="card">
+          <img src="kommits.png" alt="Kommits">
+          <p>Berorganisasi di Kommits TKJ</p>
+        </div>
 
-/* Cards layout */
-.cards {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
+      </div>
+    </section>
+  </div>
 
-/* Card */
-.card {
-  background: #ffffff;
-  width: 220px;
-  padding: 20px;
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover effect */
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-}
-
-/* Gambar di card */
-.card img {
-  width: 80px;
-  height: auto;
-  margin-bottom: 15px;
-}
-
-/* Teks card */
-.card p {
-  font-weight: 600;
-}
+</body>
+</html>
