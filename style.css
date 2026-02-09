@@ -1,79 +1,19 @@
-/* Reset dasar */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* List TKJ */
+.list {
+  margin-left: 20px;
 }
 
-/* Body */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #f4f6f8, #e9ecf1);
-  color: #333;
-  line-height: 1.6;
+.list li {
+  margin-bottom: 8px;
 }
 
-/* Container */
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px 20px;
-}
-
-/* Header */
-h1 {
-  font-size: 32px;
-}
-
-.subtitle {
-  color: #666;
-  margin-bottom: 40px;
-}
-
-/* Section */
-section {
-  margin-bottom: 50px;
-}
-
-section h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
-  border-left: 5px solid #4f46e5;
-  padding-left: 10px;
-}
-
-/* Cards */
-.cards {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-/* Card */
-.card {
-  background: white;
-  width: 220px;
-  padding: 20px;
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover */
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-}
-
-/* Gambar */
-.card img {
-  width: 160px;
-  height: auto;
-  margin-bottom: 15px;
-}
-
-/* Teks card */
-.card p {
+/* Link */
+a {
+  color: #4f46e5;
+  text-decoration: none;
   font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
 }
