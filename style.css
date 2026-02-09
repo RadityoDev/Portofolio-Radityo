@@ -1,11 +1,11 @@
-/* RESET */
+/* Reset dasar (jangan keras-keras) */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY */
+/* Body */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(135deg, #f4f6f8, #e9ecf1);
@@ -13,108 +13,107 @@ body {
   line-height: 1.6;
 }
 
-/* CONTAINER */
+/* Container */
 .container {
   max-width: 900px;
   margin: auto;
   padding: 30px 20px;
 }
 
-/* HEADER */
+/* Judul */
 h1 {
-  font-size: 32px;
-  margin-bottom: 5px;
+  font-size: 30px;
+  margin-bottom: 6px;
 }
 
 .subtitle {
   color: #666;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+  font-size: 14px;
 }
 
-/* SECTION */
+/* Section */
 section {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 section h2 {
   font-size: 22px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   border-left: 5px solid #4f46e5;
   padding-left: 10px;
 }
 
-/* PARAGRAF */
+/* Paragraf */
 section p {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+  font-size: 14px;
 }
 
-/* LIST (KEAHLIAN & PRAKTIK) */
+/* LIST (keahlian & praktik) */
 .list {
-  margin-left: 20px;
+  margin-left: 18px;
 }
 
 .list li {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+  font-size: 14px;
 }
 
-/* CARDS CONTAINER */
+/* Cards */
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
-/* CARD */
+/* Card */
 .card {
-  background: #fff;
-  padding: 20px;
+  background: white;
+  width: 220px;
+  padding: 18px;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* CARD HOVER */
+/* Hover */
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.15);
 }
 
-/* CARD IMAGE */
+/* Gambar */
 .card img {
-  width: 120px;
+  width: 140px;
   height: auto;
   margin-bottom: 12px;
 }
 
-/* CARD TEXT */
+/* Text card */
 .card p {
   font-weight: 600;
   font-size: 14px;
 }
 
-/* LINK */
+/* Link */
 a {
   color: #4f46e5;
   text-decoration: none;
-  font-weight: 600;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-/* RESPONSIVE HP */
+/* RESPONSIVE HP (INI PENTING) */
 @media (max-width: 600px) {
-  h1 {
-    font-size: 26px;
+  .cards {
+    justify-content: center;
   }
 
-  section h2 {
-    font-size: 20px;
-  }
-
-  .card p {
-    font-size: 13px;
+  .card {
+    width: 90%;
   }
 }
