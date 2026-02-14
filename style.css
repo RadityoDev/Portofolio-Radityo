@@ -149,3 +149,31 @@ body.dark .subtitle {
 body.dark section h2 {
   border-left: 5px solid #818cf8;
 }
+.btn-download {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 22px;
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-download:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* DARK MODE SUPPORT */
+body.dark .btn-download {
+  background: linear-gradient(135deg, #6366f1, #2563eb);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .btn-download:hover {
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
