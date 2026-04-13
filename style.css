@@ -239,6 +239,47 @@ form button {
 form button:hover {
   background: #3730a3;
 }
+/* IG STYLE SLIDER */
+.ig-slider {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.ig-slides {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.ig-slides img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+/* DOT INDICATOR */
+.dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.dots span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dots span.active {
+  background: white;
+}
 
 
 
