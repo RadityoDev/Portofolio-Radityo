@@ -170,6 +170,68 @@ function toggleDarkMode() {
   document.body.classList.toggle("dark");
 }
 </script>
+<script>
+const slider = document.querySelector(".ig-slides");
+const images = document.querySelectorAll(".ig-slides img");
+const dotsContainer = document.querySelector(".dots");
+
+let index = 0;
+let startX = 0;
+let isDragging = false;
+
+// DOTS
+images.forEach((_, i) => {
+  const dot = document.createElement("span");
+  dot.addEventListener("click", () => {
+    index = i;
+    updateSlider();
+  });
+  dotsContainer.appendChild(dot);
+});
+
+function updateDots() {
+  const dots = document.querySelectorAll(".dots span");
+  dots.forEach(dot => dot.classList.remove("active"));
+  dots[index].classList.add("active");
+}
+
+// UPDATE
+function updateSlider() {
+  slider.style.transform = `translateX(-${index * 100}%)`;
+  updateDots();
+}
+
+// SWIPE
+slider.addEventListener("touchstart", e => {
+  startX = e.touches[0].clientX;
+  isDragging = true;
+});
+
+slider.addEventListener("touchmove", e => {
+  if (!isDragging) return;
+  let moveX = e.touches[0].clientX;
+  let diff = startX - moveX;
+
+  if (diff > 50) {
+    index = Math.min(index + 1, images.length - 1);
+    isDragging = false;
+    updateSlider();
+  }
+
+  if (diff < -50) {
+    index = Math.max(index - 1, 0);
+    isDragging = false;
+    updateSlider();
+  }
+});
+
+slider.addEventListener("touchend", () => {
+  isDragging = false;
+});
+
+// INIT
+updateSlider();
+</script>
 
 </body>
 </html>
