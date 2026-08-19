@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f4f6f8, #e9ecf1);
+  color: #333;
+  line-height: 1.6;
+  transition: 0.3s;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 4px solid #4f46e5;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 35px;
+  font-size: 14px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  border-left: 5px solid #4f46e5;
+  padding-left: 10px;
+}
+
+section p {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.list {
+  margin-left: 18px;
+}
+
+.list li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  width: 260px;
+  padding: 18px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 120px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    justify-content: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+/* DARK MODE */
+body.dark {
+  background: #111827;
+  color: #e5e7eb;
+}
+
+body.dark .card {
+  background: #1f2937;
+}
+
+body.dark .subtitle {
+  color: #9ca3af;
+}
+
+body.dark section h2 {
+  border-left: 5px solid #818cf8;
+}
+.btn-download {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 22px;
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-download:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* DARK MODE SUPPORT */
+body.dark .btn-download {
+  background: linear-gradient(135deg, #6366f1, #2563eb);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .btn-download:hover {
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+.btn-contact {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px 22px;
+  background: transparent;
+  border: 2px solid #4f46e5;
+  color: #4f46e5;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+  background: #4f46e5;
+  color: white;
+}
+
+/* Dark Mode */
+body.dark .btn-contact {
+  border: 2px solid #818cf8;
+  color: #818cf8;
+}
+
+body.dark .btn-contact:hover {
+  background: #818cf8;
+  color: black;
+}
+html {
+  scroll-behavior: smooth;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin-top: 15px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #3730a3;
+}
+/* IG STYLE SLIDER */
+.ig-slider {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.ig-slides {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.ig-slides img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+/* DOT INDICATOR */
+.dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.dots span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dots span.active {
+  background: white;
+}
+
+
+
